@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class bear here.
+ * its a bear, he does bear things.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (eli abergel) 
+ * @version (may 31 2022)
  */
 public class Bear extends Actor
 {
@@ -12,6 +12,25 @@ public class Bear extends Actor
     
     public void act()
     {
-        // Add your action code here.
+        if(Greenfoot.isKeyDown("left"))
+        {
+            move(-1);
+        }
+        else if(Greenfoot.isKeyDown("right"))
+        {
+            move(1);
+        }
+        
+        
+    }
+    
+    public void eat()
+    {
+        if(isTouching(Bread.class))
+        {
+            removeTouching(Bread.class);
+            MyWorld world = (MyWorld) getWorld();
+            world.createBread();
+        }
     }
 }

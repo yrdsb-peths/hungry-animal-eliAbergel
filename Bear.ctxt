@@ -1,6 +1,8 @@
 #BlueJ class context
 comment0.target=Bear
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ bear\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ its\ a\ bear,\ he\ does\ bear\ things.\r\n\ \r\n\ @author\ (eli\ abergel)\ \r\n\ @version\ (may\ 31\ 2022)\r\n
 comment1.params=
 comment1.target=void\ act()
-numComments=2
+comment2.params=
+comment2.target=void\ eat()
+numComments=3
