@@ -21,7 +21,7 @@ public class Bear extends Actor
             move(1);
         }
         
-        
+        eat();
     }
     
     public void eat()
