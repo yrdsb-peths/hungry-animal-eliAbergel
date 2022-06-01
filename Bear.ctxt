@@ -2,7 +2,11 @@
 comment0.target=Bear
 comment0.text=\r\n\ its\ a\ bear,\ he\ does\ bear\ things.\r\n\ \r\n\ @author\ (eli\ abergel)\ \r\n\ @version\ (may\ 31\ 2022)\r\n
 comment1.params=
-comment1.target=void\ act()
+comment1.target=Bear()
 comment2.params=
-comment2.target=void\ eat()
-numComments=3
+comment2.target=void\ animateBear()
+comment3.params=
+comment3.target=void\ act()
+comment4.params=
+comment4.target=void\ eat()
+numComments=5
