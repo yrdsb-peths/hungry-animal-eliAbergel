@@ -15,11 +15,13 @@ public class Bread extends Actor
      */
     public void act()
     {
+        //sets the speed for the bread
         int x = getX();
         int y = getY() + speed;
         setLocation(x ,y);
         
         MyWorld world = (MyWorld) getWorld();
+        //removed bread when goes bellow the screen
         if(getY() >= world.getHeight())
         {
             world.gameOver();

@@ -8,6 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class titleScreen extends World
 {
+    //labels for the this screen
     Label titleLabelP1 = new Label("Super patriotic", 80);
     Label titleLabelP2 = new Label("french bear!!!", 80);
     Label overTitleLabel = new Label("welcome to", 40);
@@ -21,6 +22,7 @@ public class titleScreen extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1); 
+        //all the labels put into the title screen
         addObject(titleLabelP1, getWidth()/2, getHeight()/3);
         addObject(titleLabelP2, getWidth()/2,getHeight()/2);
         addObject(overTitleLabel, getWidth()/2, getHeight()/4);
@@ -33,6 +35,7 @@ public class titleScreen extends World
     {
         if(Greenfoot.isKeyDown("space"))
         {
+            //the activation for starting the game
             MyWorld gameWorld = new MyWorld();
             Greenfoot.setWorld(gameWorld);
         }
@@ -44,6 +47,7 @@ public class titleScreen extends World
      */
     private void prepare()
     {
+        //the still bear on the title screen
         Bear bear = new Bear();
         addObject(bear,300,250);
         bear.setLocation(312,247);
